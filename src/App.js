@@ -1,23 +1,28 @@
-import logo from './logo.svg';
 import './App.css';
+import { HabitTracker } from './components/HabitTracker';
+import { Playlist } from './components/Playlist';
+import { Products } from './components/Products';
+import { Profile } from './components/Profile';
+import { ProfileFollowers } from './components/ProfileFollowers';
+import { Projects } from './components/Projects';
+import { SocialMedia } from './components/SocialMedia';
+import { ToDo } from './components/ToDo';
+import { UnArchived } from './components/UnArchived';
+import { Video } from './components/Video';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Products />
+      <ToDo />
+      <HabitTracker />
+      <Playlist />
+      <SocialMedia />
+      <UnArchived />
+      <Projects />
+      <Profile />
+      <Video />
+      <ProfileFollowers />
     </div>
   );
 }
